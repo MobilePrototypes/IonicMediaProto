@@ -1,0 +1,17 @@
+<ion-view title="News">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="n in news" type="item-text-wrap" href="#/tab/news/{{n.id}}">
+        <div class="news-category">
+          {{n.category}}
+        </div>
+        <div class="news-image">
+          <img src="img/news/news-{{n.id}}.jpg">
+        </div> 
+        <div class="news-title">
+          {{n.title}}
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,1 +1,15 @@
 /* Empty. Add your own CSS if you like */
+a.item-content 
+{
+  padding: 16px !important;
+}
+
+.news-category 
+{
+}
+
+.news-image img
+{
+  width: 100%;
+  height: auto;
+}
