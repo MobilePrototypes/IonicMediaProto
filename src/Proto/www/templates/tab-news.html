@@ -3,13 +3,15 @@
     <ion-list>
       <ion-item ng-repeat="n in news" type="item-text-wrap" href="#/tab/news/{{n.id}}">
         <div class="news-category">
-          {{n.category}}
+          <i class="ion-ios7-camera"></i> {{n.category}}
         </div>
         <div class="news-image">
           <img src="img/news/news-{{n.id}}.jpg">
         </div> 
         <div class="news-title">
           {{n.title}}
+        </div>
+        <div class="news-meta">          
         </div>
       </ion-item>
     </ion-list>
