@@ -63,3 +63,10 @@ a.item-content
 {
   background-color: #333 !important;
 }
+
+.masonry-brick{
+     float: left;
+     width: 129px;
+     margin: 3px;
+    background-color:#444444;
+}
