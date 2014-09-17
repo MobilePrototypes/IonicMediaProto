@@ -1,7 +1,21 @@
 <ion-view title="News">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="n in news" type="item-text-wrap" href="#/tab/news/{{n.id}}">
+   <div class="row">
+      <div class="col col-90">
+        <div class="news-category">
+          <i class="ion-ios7-camera"></i> category
+        </div>
+        <div class="news-image">
+          <img src="img/news/news-2.jpg">
+        </div> 
+        <div class="news-title">
+        title
+        </div>
+      </div>
+    </div>
+      
+    <div class="container" id="container">
+      <div ng-repeat="n in news" type="item-text-wrap" href="#/tab/news/{{n.id}}"  class="masonry-brick">
         <div class="news-category">
           <i class="ion-ios7-camera"></i> {{n.category}}
         </div>
@@ -11,9 +25,7 @@
         <div class="news-title">
           {{n.title}}
         </div>
-        <div class="news-meta">          
-        </div>
-      </ion-item>
-    </ion-list>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
